@@ -30,7 +30,7 @@ B2 Notify V2 is a customizable notification system for FiveM, designed to provid
        │   │   ├── warning.wav
        │   │   └── info.wav
        ├── client.lua
-       └── __resource.lua
+       └── fxmanifest.lua
    ```
 
 3. **Add to Server Configuration**:
@@ -47,12 +47,12 @@ You can trigger notifications from other scripts using the export function.
 
 **Syntax**:
 ```lua
-exports['b2_notifyv2']:ShowNotification(title, message, duration, type, position)
+exports['b2_notifyV2']:ShowNotification(title, message, duration, type, position)
 ```
 
 **Example**:
 ```lua
-exports['b2_notifyv2']:ShowNotification("Test Title", "This is a test message", 5000, "success", "top-right")
+exports['b2_notifyV2']:ShowNotification("Test Title", "This is a test message", 5000, "success", "top-right")
 ```
 
 ## Configuration
@@ -86,7 +86,7 @@ The `index.html` file contains the Vue.js application & TailwindCSS styling that
 
 The `client.lua` script handles the commands and exports to trigger notifications from other resources.
 
-### Resource Manifest (`__resource.lua`)
+### Resource Manifest (`fxmanifest.lua`)
 
 Defines the resource for FiveM and specifies the files to be used.
 
